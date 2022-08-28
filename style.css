@@ -94,6 +94,7 @@ header img {
 
 .header--title--container button a {
   color: #0044ff;
+  text-decoration: none;
 }
 
 .header--title--container button:hover::after {
@@ -108,7 +109,7 @@ header img {
 .header--title--container button::after {
   border-radius: 20px;
   content: "";
-  background: #ff78e6;
+  background: #ff99ec;
   border: 1px solid #b579b59e;
   position: absolute;
   z-index: -1;

@@ -358,7 +358,7 @@ main {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
-  color: #808080;
+  color: var(--off-white);
 }
 
 .product-detail--card {
@@ -458,7 +458,7 @@ main {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
-  color: #757575;
+  color: var(--warm-black);
 }
 
 .plans-container--card {

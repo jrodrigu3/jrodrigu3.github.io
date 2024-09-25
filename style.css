@@ -1,9 +1,0 @@
-body {
-  font-family: 'Poppins', sans-serif;
-}
-
-/* Ejemplo de animación en botones */
-a:hover {
-  transform: translateY(-2px);
-  transition: all 0.2s ease-in-out;
-}

@@ -1,0 +1,8 @@
+/* Ajusta el z-index si es necesario */
+.relative {
+    z-index: 0;
+}
+
+.relative .absolute {
+    z-index: 10;
+}

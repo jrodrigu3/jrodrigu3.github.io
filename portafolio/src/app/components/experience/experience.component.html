@@ -1,0 +1,35 @@
+<section class="mb-24">
+  <h2 class="text-3xl font-bold text-center mb-8">He Trabajado en:</h2>
+  <p class="text-xl text-center mb-12">Algunos lugares donde he trabajado</p>
+  <div class="flex flex-wrap justify-center items-center gap-8">
+    <div
+      *ngFor="let exp of experiences"
+      class="group [perspective:1000px] w-64 h-80"
+    >
+      <div
+        class="relative w-full h-full transition-transform duration-700 transform-style-3d group-hover:rotate-y-180"
+      >
+        <!-- Cara Frontal -->
+        <div
+          class="absolute w-full h-full backface-hidden flex items-center justify-center bg-white rounded-lg shadow-lg"
+        >
+          <img
+            [src]="exp.logo"
+            [alt]="exp.company"
+            class="w-32 h-32 object-contain"
+          />
+        </div>
+        <!-- Cara Posterior -->
+        <div
+          class="absolute w-full h-full backface-hidden rotate-y-180 bg-white text-gray-800 p-4 rounded-lg shadow-lg flex flex-col justify-center"
+        >
+          <h3 class="text-lg font-semibold mb-1">{{ exp.position }}</h3>
+          <p class="text-sm text-gray-600 mb-1">
+            {{ exp.duration }} | {{ exp.location }}
+          </p>
+          <p class="text-sm">{{ exp.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

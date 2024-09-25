@@ -1,0 +1,17 @@
+<section class="mb-24">
+  <!-- Agrega los títulos aquí -->
+  <h2 class="text-3xl font-bold text-center mb-8">
+    Herramientas de Programación y Frameworks
+  </h2>
+  <p class="text-xl text-center mb-12">Algunas cosas que conozco</p>
+
+  <!-- Aquí va el resto de tu código -->
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    <!-- Tus tarjetas de habilidades -->
+    <app-skill-card
+      *ngFor="let skill of skills"
+      [skillName]="skill.name"
+      [skillIcon]="skill.icon"
+    ></app-skill-card>
+  </div>
+</section>
